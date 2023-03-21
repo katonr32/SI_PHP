@@ -26,7 +26,11 @@
 
     </script>
 <body>
-  
+<button onclick="location.href='view1.php'">View 1</button>
+<button onclick="location.href='view1.php'">View 2</button>
+<button onclick="location.href='view1.php'">View 3</button>
+<button onclick="location.href='view1.php'">View 4</button>
+<button onclick="location.href='view1.php'">View 5</button>
     <div class="container mt-4">
 
         <?php include('message.php'); ?>
