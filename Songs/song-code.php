@@ -18,7 +18,7 @@ if(isset($_POST['delete_song']))
     else
     {
         $_SESSION['message'] = "song Not Deleted";
-       header("Location: ..\index.php");
+        header("Location: ..\index.php");
         exit(0);
     }
 }
