@@ -26,11 +26,13 @@
 
     </script>
 <body>
+    <div align="center">
 <button onclick="location.href='view1.php'">View 1</button>
-<button onclick="location.href='view1.php'">View 2</button>
-<button onclick="location.href='view1.php'">View 3</button>
-<button onclick="location.href='view1.php'">View 4</button>
-<button onclick="location.href='view1.php'">View 5</button>
+<button onclick="location.href='view2.php'">View 2</button>
+<button onclick="location.href='view3.php'">View 3</button>
+<button onclick="location.href='view4.php'">View 4</button>
+<button onclick="location.href='view5.php'">View 5</button>
+</div>
     <div class="container mt-4">
 
         <?php include('message.php'); ?>

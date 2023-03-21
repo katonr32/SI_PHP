@@ -2,7 +2,7 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-header">
-        <h4>All Songs</h4>
+        <h4>Songs Released After 1990</h4>
       </div>
       <div class="card-body">
         <table class="table table-bordered table-striped">
@@ -18,7 +18,8 @@
             require 'dbcon.php';
             $sql = "SELECT s.title AS song_title, s.length, a.title AS album_title
                     FROM songs s
-                    JOIN albums a ON s.album_id = a.id";
+                    JOIN albums a ON s.album_id = a.id
+                    WHERE a.release_year > 1990";
             $result = $con->query($sql);
             if ($result->num_rows > 0) {
               while ($row = $result->fetch_assoc()) {
@@ -40,24 +41,3 @@
     </div>
   </div>
 </div>
-
-<style>
-.card {
-  margin-top: 20px;
-  padding: 20px;
-}
-
-th {
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #f2f2f2;
-}
-
-table {
-  border-radius: 5px;
-}
-</style>
